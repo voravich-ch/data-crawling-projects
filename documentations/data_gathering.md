@@ -8,7 +8,7 @@
   - [Critic Content](#imdb-critic-content)
   - [User Review](#imdb-user-review)
   - [Director & Cast](#imdb-director--cast)
-  - [Metacritic Url](#imdb-mt-url)
+  - [Metacritic Url](#imdb-metacritic-url)
 - [Metacritic](#metacritic)
   - [Movie Url](#metacritic-movie-url)
   - [Movie Information](#metacritic-movie-information)
@@ -28,13 +28,13 @@
 
 ### IMDb Data
 
-Directory location: `dataDirectory\imdb_dump`
+Directory location: `imdb/data/imdb_dump`
 
 For IMDb data documentation, please see [Documentation](https://www.imdb.com/interfaces/).
 
 ### IMDb Sample Data
 
-File location: `imdb\data\imdb_sample\sample.json`
+File location: `imdb/data/sample.json`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -44,7 +44,7 @@ genres | STRING | Movie genres (Comma-separated string)
 
 ### IMDb Movie Information
 
-File location: `imdb/data/imdb_sample/imdb_movie_info.jl`
+File location: `imdb/data/imdb_movie_info.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -63,7 +63,7 @@ spider | STRING | Spider name
 
 ### IMDb Critic Url
 
-File location: `dataDirectory\imdb_sample\imdb_critic_url.jl`
+File location: `imdb/data/imdb_critic_url.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -76,7 +76,7 @@ spider | STRING | Spider name
 
 ### IMDb Critic Content
 
-File location: `dataDirectory\imdb_sample\imdb_critic_content.jl`
+File location: `imdb/data/imdb_critic_content.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -87,7 +87,7 @@ spider | STRING | Spider name
 
 ### IMDb User Review
 
-File location: `dataDirectory\imdb_sample\imdb_user_review.jl`
+File location: `imdb/data/imdb_user_review.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -105,7 +105,7 @@ spider | STRING | Spider name
 
 ### IMDb Director & Cast
 
-File location: `dataDirectory\imdb_sample\imdb_director_cast.jl`
+File location: `imdb/data/imdb_director_cast.jl`
 
 Fields | Type | Description
 --- | --- | ---
@@ -118,7 +118,7 @@ spider | STRING | Spider name
 
 ### IMDb Metacritic URL
 
-File location: `dataDirectory\imdb_sample\imdb_mt_url.jl`
+File location: `imdb/data/imdb_mt_url.jl`
 
 Fields | Type | Description
 --- | --- | ---
@@ -131,7 +131,7 @@ spider | STRING | Spider name
 ## Metacritic
 
 ### Metacritic Movie URL
-File location: `dataDirectory\metacritic\mt_movie_url.jl`
+File location: `metacritic/data/mt_movie_url.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -142,7 +142,7 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Metacritic Movie Information
-File location: `dataDirectory\metacritic\mt_movie_info.jl`
+File location: `metacritic/data/mt_movie_info.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -159,7 +159,7 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Metacritic User Score
-File location: `dataDirectory\metacritic\mt_user_score.jl`
+File location: `metacritic/data/mt_user_score.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -174,7 +174,7 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Metacritic User Review
-File location: `dataDirectory\metacritic\mt_user_review.jl`
+File location: `metacritic/data/mt_user_review.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -188,7 +188,7 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Metacritic Critic Score
-File location: `dataDirectory\metacritic\mt_cr_score.jl`
+File location: `metacritic/data/mt_cr_score.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -203,7 +203,7 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Metacritic Critic Review
-File location: `dataDirectory\metacritic\mt_cr_review.jl`
+File location: `metacritic/data/mt_cr_review.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -218,14 +218,14 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Metacritic Critic Review Content
-File location: `dataDirectory\metacritic\mt_cr_review_content.jl`
+File location: `metacritic/data/mt_cr_review_content.jl`
 
 - IN PROGRESS
 
 ## Rotten Tomatoes
 
 ### Rotten Tomatoes Movie URL
-File location: `dataDirectory\rottenTomatoes\rt_movie_url.jl`
+File location: `rottenTomatoes/data/rt_movie_url.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -236,7 +236,7 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Rotten Tomatoes Movie Information
-File location: `dataDirectory\rottenTomatoes\rt_movie_info.jl`
+File location: `rottenTomatoes/data/rt_movie_info.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -258,7 +258,7 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Rotten Tomatoes Critic Review
-File location: `dataDirectory\rottenTomatoes\rt_cr_review.jl`
+File location: `rottenTomatoes/data/rt_cr_review.jl`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -275,14 +275,6 @@ date | DATETIME | Crawl date
 spider | STRING | Spider name
 
 ### Rotten Tomatoes Critic Review Content
-File location: `dataDirectory\metacritic\rt_cr_review_content.jl`
+File location: `rottenTomatoes/data/rt_cr_review_content.jl`
 
 - IN PROGRESS
-
-
-## Etsy
-
-
-
-
-## Yelp
