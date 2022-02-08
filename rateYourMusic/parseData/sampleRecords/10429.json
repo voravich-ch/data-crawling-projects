@@ -1,0 +1,254 @@
+{
+    "thread_id": "10429",
+    "K1": {
+        "V0": "Music genre Profile (Edit)"
+    },
+    "K2": {
+        "V0": "Operetta",
+        "V1": [
+            "Operetta",
+            "/genre/operetta/"
+        ],
+        "V2": "[genre10321]"
+    },
+    "K3": {
+        "V0": [
+            "[deleted]",
+            "/messages/compose?sendto=_is_deleted_266683&subject=Music genre%20Profile%2010429 (Operetta)"
+        ]
+    },
+    "K4": {
+        "V0": "2008-05-11 19:18:28.496086"
+    },
+    "K5": {
+        "V0": "Denied by dt2 on 2008-07-08 01:40:18.710682",
+        "V1": [
+            "dt2",
+            "/~dt2"
+        ]
+    },
+    "K6": {
+        "V0": "2"
+    },
+    "K7": {
+        "V0": "37%",
+        "V1": "Yes: 3",
+        "V2": "Hold:0",
+        "V3": "No: 5"
+    },
+    "K8": {
+        "V0": "Edit"
+    },
+    "K9": {
+        "V0": [
+            "[deleted]",
+            null
+        ],
+        "V1": [
+            "[deleted]",
+            null
+        ]
+    },
+    "K10": {
+        "V0": "",
+        "V1": ""
+    },
+    "K11": {
+        "V0": "Operetta",
+        "V1": "Operetta"
+    },
+    "K12": {
+        "V0": "10321",
+        "V1": "10321"
+    },
+    "K13": {
+        "V0": "Operette",
+        "V1": "Operette"
+    },
+    "K14": {
+        "V0": "show tunes, opera (455) (190)",
+        "V1": "opera (190)"
+    },
+    "K15": {
+        "V0": "No",
+        "V1": "No"
+    },
+    "K16": {
+        "V0": "No",
+        "V1": "No"
+    },
+    "K17": {
+        "V0": "No",
+        "V1": "No"
+    },
+    "K18": {
+        "V0": "genre",
+        "V1": "genre"
+    },
+    "K19": {
+        "V0": "",
+        "V1": ""
+    },
+    "K20": {
+        "V0": "A hybrid of light opera and musical theatre which was popular from the late 1800s thru the early-to-mid 1900s.",
+        "V1": "A hybrid of light opera and musical theatre which was popular from the late 1800s thru the early-to-mid 1900s."
+    },
+    "K21": {
+        "V0": "Usually the music was written in a musical theatre vein with heavy operatic flavoring, and the shows had book scenes like traditional musicals as opposed to operatic recitatives.\nFamous operetta composers include Gilbert & Sullivan, Victor Herbert, Sigmund Romberg, Wright & Forrest and Rudolf Friml.\n\nhttp://en.wikipedia.org/wiki/Operetta\n\nhttp://www.musicaltheatreguide.com/mainmenu.htm\n\nReleases that should be tagged as operetta:\nThe Desert Song / The New Moon / The Blue Train [Original London Casts]\nThe Pirates of Penzance \nThe Mikado\nBabes in Toyland [Radio Broadcast - 1949]\nSong of Norway [Studio Cast]\nKismet [Original Broadway Cast]\nand many, many more...",
+        "V1": "Show tunes are songs from musicals, like Rodgers and Hammerstein et al.  I don't really think this form of light opera belongs there, next to West Side Story, Cabaret, and Oklahoma. :/\n\nDoes this really sound like a Show Tune?\n\nhttp://ca.youtube.com/watch?v=4YBhKx1bkEM\n\nhttp://en.wikipedia.org/wiki/Show_tunes\n\nAnd I wouldn't feel comfortable categorizing Operetta as Soundtracks any more than I would Opera."
+    },
+    "K22": {
+        "V0": null,
+        "V1": null
+    },
+    "K23": {
+        "V0": [
+            {
+                "class": null,
+                "href": "http://en.wikipedia.org/wiki/Operetta",
+                "title": null,
+                "text": "http://en.wikipedia.org/wiki/Operetta"
+            },
+            {
+                "class": null,
+                "href": "http://www.musicaltheatreguide.com/mainmenu.htm",
+                "title": null,
+                "text": "http://www.musicaltheatreguide.com/mainmenu.htm"
+            },
+            {
+                "class": "album",
+                "href": "/release/comp/various-artists/the-desert-song-the-new-moon-the-blue-train-original-london-casts/",
+                "title": "[Album797273]",
+                "text": "The Desert Song / The New Moon / The Blue Train [Original London Casts]"
+            },
+            {
+                "class": "album",
+                "href": "/release/album/doyly-carte-opera-company/the-pirates-of-penzance/",
+                "title": "[Album338384]",
+                "text": "The Pirates of Penzance"
+            },
+            {
+                "class": "album",
+                "href": "/release/album/doyly-carte-opera-company/the-mikado/",
+                "title": "[Album604526]",
+                "text": "The Mikado"
+            },
+            {
+                "class": "album",
+                "href": "/release/album/various-artists/babes-in-toyland-radio-broadcast-1949/",
+                "title": "[Album893178]",
+                "text": "Babes in Toyland [Radio Broadcast - 1949]"
+            },
+            {
+                "class": "album",
+                "href": "/release/album/various-artists/song-of-norway-studio-cast-1/",
+                "title": "[Album999642]",
+                "text": "Song of Norway [Studio Cast]"
+            },
+            {
+                "class": "album",
+                "href": "/release/album/various-artists/kismet-original-broadway-cast/",
+                "title": "[Album120794]",
+                "text": "Kismet [Original Broadway Cast]"
+            }
+        ],
+        "V1": [
+            {
+                "class": null,
+                "href": "http://ca.youtube.com/watch?v=4YBhKx1bkEM",
+                "title": null,
+                "text": "http://ca.youtube.com/watch?v=4YBhKx1bkEM"
+            },
+            {
+                "class": null,
+                "href": "http://en.wikipedia.org/wiki/Show_tunes",
+                "title": null,
+                "text": "http://en.wikipedia.org/wiki/Show_tunes"
+            }
+        ]
+    },
+    "K24": [
+        {
+            "V0": "erlend",
+            "V1": "/~erlend",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "May 12, 2008 04:50 GMT"
+        },
+        {
+            "V0": "trScatterbrain",
+            "V1": "/~trScatterbrain",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "May 12, 2008 19:57 GMT"
+        },
+        {
+            "V0": "dt2",
+            "V1": "/~dt2",
+            "V2": "With all due respect, I think you're putting cart before the horse on several of your submissions. This one, for example, would fit perfectly under your submission here: http://rateyourmusic.com/rgenre/profile_details?id=10431 , and had you done that first (and assuming it got a thumbs up) this one would probably fly right through.",
+            "V3": [
+                "http://rateyourmusic.com/rgenre/profile_details?id=10431"
+            ],
+            "V4": null,
+            "V5": "May 13, 2008 03:49 GMT"
+        },
+        {
+            "V0": "fabcardenas",
+            "V1": "/~fabcardenas",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "May 15, 2008 05:47 GMT"
+        },
+        {
+            "V0": "edser",
+            "V1": "/~edser",
+            "V2": "2manydvds is right. Gilbert & Sullivan is a good example of Operetta, and should also be a subset of Show Tunes. A large percentage of Operetta is directly related to Show Tunes, and is much closer to that than traditional Opera.",
+            "V3": [],
+            "V4": "n",
+            "V5": "Jun 19, 2008 14:24 GMT"
+        },
+        {
+            "V0": "tonydolor",
+            "V1": "/~tonydolor",
+            "V2": null,
+            "V3": null,
+            "V4": "n",
+            "V5": "Jun 24, 2008 01:50 GMT"
+        },
+        {
+            "V0": "plasmodium",
+            "V1": "/~plasmodium",
+            "V2": null,
+            "V3": null,
+            "V4": "n",
+            "V5": "Jun 29, 2008 11:54 GMT"
+        },
+        {
+            "V0": "olinegerfundale",
+            "V1": "/~olinegerfundale",
+            "V2": null,
+            "V3": null,
+            "V4": "n",
+            "V5": "Jun 30, 2008 09:35 GMT"
+        },
+        {
+            "V0": "pmtpimp1969",
+            "V1": "/~pmtpimp1969",
+            "V2": null,
+            "V3": null,
+            "V4": "n",
+            "V5": "Jul 08, 2008 04:48 GMT"
+        },
+        {
+            "V0": "dt2",
+            "V1": "/~dt2",
+            "V2": null,
+            "V3": null,
+            "V4": null,
+            "V5": "Jul 08, 2008 05:40 GMT"
+        }
+    ]
+}

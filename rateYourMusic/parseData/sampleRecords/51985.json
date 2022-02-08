@@ -1,0 +1,496 @@
+{
+    "thread_id": "51985",
+    "K1": {
+        "V0": "Music genre Profile (Edit)"
+    },
+    "K2": {
+        "V0": "Minimal Techno",
+        "V1": [
+            "Minimal Techno",
+            "/genre/minimal-techno/"
+        ],
+        "V2": "[genre271]"
+    },
+    "K3": {
+        "V0": [
+            "Ensix",
+            "/~Ensix"
+        ]
+    },
+    "K4": {
+        "V0": "2021-12-09 18:53:32.63727"
+    },
+    "K5": {
+        "V0": "Waiting for Approval",
+        "V1": [
+            null,
+            null
+        ]
+    },
+    "K6": {
+        "V0": "3"
+    },
+    "K7": {
+        "V0": "95%",
+        "V1": "Yes: 20",
+        "V2": "Hold:1",
+        "V3": "No: 0"
+    },
+    "K8": {
+        "V0": "Edit"
+    },
+    "K9": {
+        "V0": [
+            "System",
+            null
+        ],
+        "V1": [
+            "Ensix",
+            "/~Ensix"
+        ]
+    },
+    "K10": {
+        "V0": "",
+        "V1": ""
+    },
+    "K11": {
+        "V0": "Minimal Techno",
+        "V1": "Minimal Techno"
+    },
+    "K12": {
+        "V0": "271",
+        "V1": "271"
+    },
+    "K13": {
+        "V0": "",
+        "V1": ""
+    },
+    "K14": {
+        "V0": "techno (91)",
+        "V1": "techno (91)"
+    },
+    "K15": {
+        "V0": "No",
+        "V1": "No"
+    },
+    "K16": {
+        "V0": "No",
+        "V1": "No"
+    },
+    "K17": {
+        "V0": "No",
+        "V1": "No"
+    },
+    "K18": {
+        "V0": "genre",
+        "V1": "genre"
+    },
+    "K19": {
+        "V0": "Stripped-down and sparse, often featuring a dark sound and a slow, steady development through the track.",
+        "V1": "Stripped-down and sparse, often featuring a dark sound and a slow, steady development through the track."
+    },
+    "K20": {
+        "V0": "Minimal Techno is a stripped-down, sparser version of traditional Techno, often featuring a darker sound and a slow, steady development through the track. Repetition may be stretched further than in ordinary Techno, with artists like Basic Channel constructing tracks lasting almost twenty minutes with comparatively few elements. Other well known figures in the genre include Plastikman and GAS, the latter incorporating Ambient elements into his music.",
+        "V1": "Developing in the early 1990s out of the second wave of Detroit Techno by artists in Detroit and Southern Ontario such as Robert Hood, Richie Hawtin, and Daniel Bell, minimal techno features a stripped-down sound that was seen as a reaction against maximalist, rave-oriented European styles of Techno and Hardcore [EDM] and a return to form of Detroit techno's ethos. Minimal techno tracks are usually repetitive and sparse in instrumentation, frequently featuring little more than a drum machine and a looping analog synth line, and sometimes taking elements from Acid Techno, as seen with Hawtin's Plastikman alias. The genre rose to popularity in Germany, as exemplified by Basic Channel, who would combine minimal techno with production techniques from Dub to create the derivative genre Dub Techno.By the 2000s, the \"minimal\" sound would prove to be influential in Germany, creating a highly popular \"minimal\" scene largely disconnected from minimal techno's Detroit roots. Minimal-influenced Tech House became that genre's most prominent sound, which has remained popular even into the 2020s. Tech house derivative Microhouse as well as Minimal Drum and Bass would take influence from this scene, and artists like GAS would create a fusion of minimal techno with Ambient Techno."
+    },
+    "K21": {
+        "V0": "http://en.wikipedia.org/wiki/Minimal_techno",
+        "V1": "http://en.wikipedia.org/wiki/Minimal_techno---New description. Sources:https://en.wikipedia.org/wiki/Minimal_technohttps://www.beatportal.com/features/minimal-techno-romanian-berlin-bar25-paris/http://www.ishkur.com/"
+    },
+    "K22": {
+        "V0": [
+            {
+                "class": "genre",
+                "href": "/genre/techno/",
+                "title": "[Genre91]",
+                "text": "Techno"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/basic-channel",
+                "title": "[Artist25139]",
+                "text": "Basic Channel"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/plastikman",
+                "title": "[Artist2497]",
+                "text": "Plastikman"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/gas",
+                "title": "[Artist11472]",
+                "text": "GAS"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/ambient/",
+                "title": "[Genre84]",
+                "text": "Ambient"
+            }
+        ],
+        "V1": [
+            {
+                "class": "genre",
+                "href": "/genre/detroit-techno/",
+                "title": "[Genre462]",
+                "text": "Detroit Techno"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/robert-hood",
+                "title": "[Artist33767]",
+                "text": "Robert Hood"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/richie_hawtin",
+                "title": "[Artist4550]",
+                "text": "Richie Hawtin"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/daniel_bell",
+                "title": "[Artist64365]",
+                "text": "Daniel Bell"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/techno/",
+                "title": "[Genre91]",
+                "text": "Techno"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/hardcore-edm/",
+                "title": "[Genre272]",
+                "text": "Hardcore [EDM]"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/acid-techno/",
+                "title": "[Genre270]",
+                "text": "Acid Techno"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/plastikman",
+                "title": "[Artist2497]",
+                "text": "Plastikman"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/basic-channel",
+                "title": "[Artist25139]",
+                "text": "Basic Channel"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/dub/",
+                "title": "[Genre150]",
+                "text": "Dub"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/dub-techno/",
+                "title": "[Genre21117]",
+                "text": "Dub Techno"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/tech-house/",
+                "title": "[Genre10366]",
+                "text": "Tech House"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/microhouse/",
+                "title": "[Genre265]",
+                "text": "Microhouse"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/minimal-drum-and-bass/",
+                "title": "[Genre30073]",
+                "text": "Minimal Drum and Bass"
+            },
+            {
+                "class": "artist",
+                "href": "/artist/gas",
+                "title": "[Artist11472]",
+                "text": "GAS"
+            },
+            {
+                "class": "genre",
+                "href": "/genre/ambient-techno/",
+                "title": "[Genre269]",
+                "text": "Ambient Techno"
+            }
+        ]
+    },
+    "K23": {
+        "V0": [
+            {
+                "class": null,
+                "href": "http://en.wikipedia.org/wiki/Minimal_techno",
+                "title": null,
+                "text": "http://en.wikipedia.org/wiki/Minimal_techno"
+            }
+        ],
+        "V1": [
+            {
+                "class": null,
+                "href": "http://en.wikipedia.org/wiki/Minimal_techno",
+                "title": null,
+                "text": "http://en.wikipedia.org/wiki/Minimal_techno"
+            },
+            {
+                "class": null,
+                "href": "https://en.wikipedia.org/wiki/Minimal_techno",
+                "title": null,
+                "text": "https://en.wikipedia.org/wiki/Minimal_techno"
+            },
+            {
+                "class": null,
+                "href": "https://www.beatportal.com/features/minimal-techno-romanian-berlin-bar25-paris/",
+                "title": null,
+                "text": "https://www.beatportal.com/features/minimal-techno-romanian-berlin-bar25-paris/"
+            },
+            {
+                "class": null,
+                "href": "http://www.ishkur.com/",
+                "title": null,
+                "text": "http://www.ishkur.com/"
+            }
+        ]
+    },
+    "K24": [
+        {
+            "V0": "norizane",
+            "V1": "/~norizane",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 01:40 GMT"
+        },
+        {
+            "V0": "Wafful",
+            "V1": "/~Wafful",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 02:05 GMT"
+        },
+        {
+            "V0": "DaymanNightman",
+            "V1": "/~DaymanNightman",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 03:13 GMT"
+        },
+        {
+            "V0": "ricopomelo",
+            "V1": "/~ricopomelo",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 03:26 GMT"
+        },
+        {
+            "V0": "Schwilly19",
+            "V1": "/~Schwilly19",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 03:39 GMT"
+        },
+        {
+            "V0": "morningriseopeth",
+            "V1": "/~morningriseopeth",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 04:44 GMT"
+        },
+        {
+            "V0": "YellowJelly",
+            "V1": "/~YellowJelly",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 04:44 GMT"
+        },
+        {
+            "V0": "Dimiko",
+            "V1": "/~Dimiko",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 06:15 GMT"
+        },
+        {
+            "V0": "unlockit",
+            "V1": "/~unlockit",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 06:58 GMT"
+        },
+        {
+            "V0": "PusH",
+            "V1": "/~PusH",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 08:10 GMT"
+        },
+        {
+            "V0": "code_gs",
+            "V1": "/~code_gs",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 08:59 GMT"
+        },
+        {
+            "V0": "Nifel",
+            "V1": "/~Nifel",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 09:49 GMT"
+        },
+        {
+            "V0": "epizootics",
+            "V1": "/~epizootics",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 10:08 GMT"
+        },
+        {
+            "V0": "ecjam6",
+            "V1": "/~ecjam6",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 10:08 GMT"
+        },
+        {
+            "V0": "lefelz",
+            "V1": "/~lefelz",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 10:34 GMT"
+        },
+        {
+            "V0": "_aleph",
+            "V1": "/~_aleph",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 11:17 GMT"
+        },
+        {
+            "V0": "ShandeanMandean",
+            "V1": "/~ShandeanMandean",
+            "V2": "i agree with the content of the description but it might cause tech house to be mistagged as minimal techno, maybe theres a way to make it clearer what is minimal techno and what is tech house",
+            "V3": [],
+            "V4": "h",
+            "V5": "Dec 09, 2021 13:56 GMT"
+        },
+        {
+            "V0": "NightBow",
+            "V1": "/~NightBow",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 15:13 GMT"
+        },
+        {
+            "V0": "catsandsamosas",
+            "V1": "/~catsandsamosas",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 16:31 GMT"
+        },
+        {
+            "V0": "Ensix",
+            "V1": "/~Ensix",
+            "V2": "@ShandeanMandean what would you like me to add?",
+            "V3": [],
+            "V4": null,
+            "V5": "Dec 09, 2021 17:36 GMT"
+        },
+        {
+            "V0": "Ensix",
+            "V1": "/~Ensix",
+            "V2": "Ensix updated the following fields in this profile request: Merge to:minimal techno271Redirect children tominimal techno271Can be ratedfalsefTop levelfalsefIs category onlyfalsefDescriptionDeveloping in the early 1990s out of the second wave of Detroit Techno by artists in Detroit and Southern Ontario such as Robert Hood, Richie Hawtin, and Daniel Bell, minimal techno features a stripped-down sound that was seen as a reaction against maximalist, rave-oriented European styles of Techno and Hardcore [EDM] and a return to form of Detroit techno's ethos. Minimal techno tracks are usually repetitive and sparse in instrumentation, frequently featuring little more than a drum machine and a looping analog synth line, and sometimes taking elements from Acid Techno, as seen with Hawtin's Plastikman alias. The genre rose to popularity in Germany, as exemplified by Basic Channel, who would combine minimal techno with production techniques from Dub to create the derivative genre Dub Techno.By the 2000s, the \"minimal\" sound would prove to be influential in Germany, creating a highly popular \"minimal\" scene largely disconnected from minimal techno's Detroit roots. Minimal-influenced Tech House became that genre's most prominent sound, which has remained popular even into the 2020s. Tech house derivative Microhouse as well as Minimal Drum and Bass would take influence from this scene, and artists like GAS would create a fusion of minimal techno with Ambient Techno.Developing in the early 1990s out of the second wave of Detroit Techno by artists in Detroit and Southern Ontario such as Robert Hood, Richie Hawtin, and Daniel Bell, Minimal techno features a stripped-down sound that was seen as a reaction against maximalist, rave-oriented European styles of Techno and Hardcore [EDM] and a return to form of Detroit techno's ethos. Minimal techno tracks are usually repetitive and sparse in instrumentation, frequently featuring little more than a drum machine and a looping analog synth line, and sometimes taking elements from Acid Techno, as seen with Hawtin's Plastikman alias. The genre rose to popularity in Germany, as exemplified by Basic Channel, who would combine minimal techno with production techniques from Dub to create the derivative genre Dub Techno.By the 2000s, the \"minimal\" sound would prove to be influential in Germany, creating a highly popular \"minimal\" scene largely disconnected from minimal techno's Detroit roots. Minimal-influenced Tech House became that genre's most prominent sound, which has remained popular even into the 2020s. Tech house derivative Microhouse as well as Minimal Drum and Bass would take influence from this scene, and artists like GAS would create a fusion of minimal techno with Ambient Techno.",
+            "V3": [
+                "javascript:toggleChange(9773665);",
+                "/genre/detroit-techno/",
+                "/artist/robert-hood",
+                "/artist/richie_hawtin",
+                "/artist/daniel_bell",
+                "/genre/techno/",
+                "/genre/hardcore-edm/",
+                "/genre/acid-techno/",
+                "/artist/plastikman",
+                "/artist/basic-channel",
+                "/genre/dub/",
+                "/genre/dub-techno/",
+                "/genre/tech-house/",
+                "/genre/microhouse/",
+                "/genre/minimal-drum-and-bass/",
+                "/artist/gas",
+                "/genre/ambient-techno/",
+                "/genre/detroit-techno/",
+                "/artist/robert-hood",
+                "/artist/richie_hawtin",
+                "/artist/daniel_bell",
+                "/genre/techno/",
+                "/genre/hardcore-edm/",
+                "/genre/acid-techno/",
+                "/artist/plastikman",
+                "/artist/basic-channel",
+                "/genre/dub/",
+                "/genre/dub-techno/",
+                "/genre/tech-house/",
+                "/genre/microhouse/",
+                "/genre/minimal-drum-and-bass/",
+                "/artist/gas",
+                "/genre/ambient-techno/"
+            ],
+            "V4": null,
+            "V5": "Dec 09, 2021 18:53 GMT"
+        },
+        {
+            "V0": "Chelsea_Monteiro",
+            "V1": "/~Chelsea_Monteiro",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 19:02 GMT"
+        },
+        {
+            "V0": "Outh9X",
+            "V1": "/~Outh9X",
+            "V2": null,
+            "V3": null,
+            "V4": "y",
+            "V5": "Dec 09, 2021 22:12 GMT"
+        },
+        {
+            "V0": null,
+            "V1": null,
+            "V2": null,
+            "V3": null,
+            "V4": null,
+            "V5": null
+        }
+    ]
+}

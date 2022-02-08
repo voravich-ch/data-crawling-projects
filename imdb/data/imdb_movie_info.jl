@@ -1,0 +1,10 @@
+{"imdb_tconst": "tt9915592", "imdb_title": "A Husband to Rent", "url": "https://www.imdb.com/title/tt9915592/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9915736", "imdb_title": "Liebestraum", "imdb_budget": 40, "url": "https://www.imdb.com/title/tt9915736/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9915804", "imdb_title": "The unknown project title at this time", "url": "https://www.imdb.com/title/tt9915804/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9915872", "imdb_title": "The Last White Witch", "imdb_rating": 7.3, "imdb_n_rating": 6, "imdb_release_date": "February 22, 2019 (Japan)", "url": "https://www.imdb.com/title/tt9915872/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916170", "imdb_title": "The Rehearsal", "imdb_rating": 7.2, "imdb_n_rating": 5, "imdb_release_date": "February 8, 2019 (Germany)", "url": "https://www.imdb.com/title/tt9916170/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916188", "imdb_title": "Minotaur", "url": "https://www.imdb.com/title/tt9916188/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916190", "imdb_title": "Safeguard", "imdb_rating": 3.5, "imdb_n_rating": 221, "imdb_release_date": "November 10, 2020 (Canada)", "url": "https://www.imdb.com/title/tt9916190/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916362", "imdb_title": "Coven", "imdb_rating": 6.3, "imdb_n_rating": 3695, "imdb_budget": 40, "imdb_release_date": "October 2, 2020 (Spain)", "url": "https://www.imdb.com/title/tt9916362/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916428", "imdb_title": "The Secret of China", "imdb_rating": 3.8, "imdb_n_rating": 14, "imdb_budget": 40, "imdb_release_date": "August 8, 2019 (China)", "url": "https://www.imdb.com/title/tt9916428/", "spider": "imdb_movie_info", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916620", "imdb_title": "The Copeland Case", "url": "https://www.imdb.com/title/tt9916620/", "spider": "imdb_movie_info", "date": "20/08/2021"}

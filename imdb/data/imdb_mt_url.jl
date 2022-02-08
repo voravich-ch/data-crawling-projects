@@ -1,0 +1,10 @@
+{"imdb_tconst": "tt9915592", "url": "https://www.imdb.com/title/tt9915592/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9915736", "url": "https://www.imdb.com/title/tt9915736/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9915804", "url": "https://www.imdb.com/title/tt9915804/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9915872", "url": "https://www.imdb.com/title/tt9915872/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916170", "url": "https://www.imdb.com/title/tt9916170/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916188", "url": "https://www.imdb.com/title/tt9916188/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916190", "url": "https://www.imdb.com/title/tt9916190/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916362", "url": "https://www.imdb.com/title/tt9916362/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916428", "url": "https://www.imdb.com/title/tt9916428/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}
+{"imdb_tconst": "tt9916620", "url": "https://www.imdb.com/title/tt9916620/criticreviews", "spider": "imdb_mt_url", "date": "20/08/2021"}

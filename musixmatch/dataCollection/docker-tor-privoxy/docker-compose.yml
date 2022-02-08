@@ -1,0 +1,83 @@
+version: '3'
+
+services:
+  tor-bart:
+    container_name: 'tor-bart'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9990:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-homer:
+    container_name: 'tor-homer'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9991:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-marge:
+    container_name: 'tor-marge'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9992:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-lisa:
+    container_name: 'tor-lisa'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9993:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-hugo:
+    container_name: 'tor-hugo'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9994:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-mona:
+    container_name: 'tor-mona'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9995:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-coco:
+    container_name: 'tor-coco'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9996:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-wanda:
+    container_name: 'tor-wanda'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9997:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-carla:
+    container_name: 'tor-carla'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9998:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
+  tor-edward:
+    container_name: 'tor-edward'
+    image: 'pickapp/tor-proxy:latest'
+    ports:
+      - '9999:8888'
+    environment:
+      - IP_CHANGE_SECONDS=1
+    restart: always
