@@ -22,10 +22,6 @@
   - [Movie Information](#rotten-tomatoes-movie-information)
   - [Critic Review](#rotten-tomatoes-critic-review)
   - [Critic Review Content](#rotten-tomatoes-critic-review-content)
-- [Etsy](#etsy)
-  - []()
-- [Yelp](#yelp)
-  - []()
 
 
 ## IMDb
@@ -38,7 +34,7 @@ For IMDb data documentation, please see [Documentation](https://www.imdb.com/int
 
 ### IMDb Sample Data
 
-File location: `dataDirectory\imdb_sample\sample_100.json`
+File location: `imdb\data\imdb_sample\sample.json`
 
 Fields | Type | Description 
 --- | --- | ---
@@ -48,7 +44,7 @@ genres | STRING | Movie genres (Comma-separated string)
 
 ### IMDb Movie Information
 
-File location: `dataDirectory\imdb_sample\imdb_movie_info.jl`
+File location: `imdb/data/imdb_sample/imdb_movie_info.jl`
 
 Fields | Type | Description 
 --- | --- | ---
