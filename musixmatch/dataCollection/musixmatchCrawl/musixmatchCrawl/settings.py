@@ -7,6 +7,9 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+from dotenv import load_dotenv
+import os
+
 BOT_NAME = 'musixmatchCrawl'
 
 SPIDER_MODULES = ['musixmatchCrawl.spiders']
@@ -97,7 +100,7 @@ DOWNLOADER_MIDDLEWARES = {
   'scrapy_zyte_smartproxy.ZyteSmartProxyMiddleware': 610
   }
 ZYTE_SMARTPROXY_ENABLED = True
-ZYTE_SMARTPROXY_APIKEY = '[REDACTED_API_KEY]'
+ZYTE_SMARTPROXY_APIKEY = os.environ.get('ZYTE_SMARTPROXY_APIKEY')
 ########################################################################
 
 # Enable or disable extensions
