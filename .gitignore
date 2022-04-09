@@ -131,3 +131,6 @@ dmypy.json
 # Large file
 imdb/data/sample.json
 rateYourMusic/parseData/threads
+
+# Credentials
+*.crt
