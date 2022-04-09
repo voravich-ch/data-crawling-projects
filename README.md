@@ -19,11 +19,14 @@ This repository showcases data crawling projects for previous research.
 ### OOP Crawling Workflow with Spotipy
 - SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/spotifyCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/deployment.py), [acousticAttr.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/acousticAttr.py)
 
+### Scrapy-Splash Infinite Scroll (Lua language)
+- IMDbCrawl: [imdb_user_review.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb/imdbCrawl/spiders/imdb_user_review.py)
+
 ### Vertical Crawling with Scrapy
 - RateYourMusicCrawl: [00_genre-level.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/rateYourMusic/dataCollection/rateYourMusicCrawl/rateYourMusicCrawl/spiders/00_genre-level.py)
 
-### Scrapy-Splash Infinite Scroll
-- IMDbCrawl: [imdb_user_review.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb/imdbCrawl/spiders/imdb_user_review.py)
+### Horizontal Crawling with Scrapy
+- MetacriticCrawl: [mt_movie_url.py](https://github.com/voravich-ch/data-crawling-projects/blob/3eb73b1cdc172be2767dee1e51b824b3afa3be62/metacritic/metacriticCrawl/spiders/mt_movie_url.py)
 
 ### Scrape Data from GoogleSearch
 - GoogleSearch: [artistSearchFromMusicBrainz.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/googleSearch/artistSearchFromMusicBrainz.py), [grammyGoogleSearch.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyGoogleSearch/grammyGoogleSearch.py)
