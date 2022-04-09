@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = 'musixmatchCrawl.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0'
+# USER_AGENT = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -42,10 +42,11 @@ DOWNLOAD_TIMEOUT = 600
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-#DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-#}
+DEFAULT_REQUEST_HEADERS = {
+    "X-Crawlera-Profile": "desktop",
+    "X-Crawlera-Cookies": "disable",
+    "X-Crawlera-Region": "CA"
+}
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
@@ -101,6 +102,7 @@ DOWNLOADER_MIDDLEWARES = {
   }
 ZYTE_SMARTPROXY_ENABLED = True
 ZYTE_SMARTPROXY_APIKEY = os.environ.get('ZYTE_SMARTPROXY_APIKEY')
+ZYTE_SMARTPROXY_URL = os.environ.get('ZYTE_SMARTPROXY_URL')
 ########################################################################
 
 # Enable or disable extensions
