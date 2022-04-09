@@ -14,12 +14,19 @@ This repository showcases data crawling projects for previous research.
 
 ## Python scripts with interesting functionalities
 ### OOP Crawling Workflow with Selenium
-- 
+- GrammyCrawl: [artistCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/artistCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/deployment.py)
 
 ### OOP Crawling Workflow with Spotipy
-- a
+- SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/spotifyCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/deployment.py)
 
 ### Vertical Crawling with Scrapy
 - RateYourMusicCrawl: [00_genre-level.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/rateYourMusic/dataCollection/rateYourMusicCrawl/rateYourMusicCrawl/spiders/00_genre-level.py)
 
 ### Scrapy-Splash Infinite Scroll
+- IMDbCrawl: [imdb_user_review.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb/imdbCrawl/spiders/imdb_user_review.py)
+
+### Scrape Data from GoogleSearch
+- GoogleSearch: [artistSearchFromMusicBrainz.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/googleSearch/artistSearchFromMusicBrainz.py), [grammyGoogleSearch.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyGoogleSearch/grammyGoogleSearch.py)
+
+### Data Parsing with BeautifulSoup
+- RateYourMusicParsing: [01_parse_data.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/rateYourMusic/parseData/01_parseData.py)
