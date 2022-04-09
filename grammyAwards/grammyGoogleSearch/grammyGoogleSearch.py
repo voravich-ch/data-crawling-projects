@@ -19,7 +19,7 @@ def connect_to_city(db_name, collection_name):
 def get_data(collection):
     cursor = collection.find({}, projection = {"_id": 0})
     df = pd.DataFrame(cursor)
-    df.drop_duplicates(subset=['artist_id'], inplace=True)
+    df.drop_duplicates(subset=['name'], inplace=True)
     names = df['name'].dropna()
     names = names.str.replace(' ', '+').reset_index(drop=True)
     return names
@@ -89,7 +89,7 @@ def request_data(i):
             "wiki_html": wiki_html,
         }
         # Insert the document to MongoDB
-        collection = connect_to_city(db_name=grammyAwards, collection_name=googleSearch)
+        collection = connect_to_city(db_name='grammyAwards', collection_name='artists_googleSearch')
         collection.insert_one(document)
 
 def handle_none(code):
@@ -100,7 +100,7 @@ def handle_none(code):
 
 def main():
     # Parameter preparation
-    collection = connect_to_city(db_name='musicbrainz', collection_name='artists_to_search')
+    collection = connect_to_city(db_name='grammyAwards', collection_name='artists')
     names = get_data(collection)
     urls = construct_urls(names)
     
