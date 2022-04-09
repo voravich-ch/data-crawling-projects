@@ -17,7 +17,7 @@ This repository showcases data crawling projects for previous research.
 - GrammyCrawl: [artistCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/artistCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/deployment.py)
 
 ### OOP Crawling Workflow with Spotipy
-- SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/spotifyCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/deployment.py)
+- SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/spotifyCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/spotifyCrawl/deployment.py), [acousticAttr.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/acousticAttr.py)
 
 ### Vertical Crawling with Scrapy
 - RateYourMusicCrawl: [00_genre-level.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/rateYourMusic/dataCollection/rateYourMusicCrawl/rateYourMusicCrawl/spiders/00_genre-level.py)
