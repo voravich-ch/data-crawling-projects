@@ -1,6 +1,10 @@
 # Data Crawling Projects
 This repository showcases data crawling projects for previous research.
 
+![web_crawler](https://drive.google.com/uc?export=view&id=1NonX4DAigi5OHJaXe16b3LL3Fp4WM7dX)
+
+Image Copyright ©: [TarikVision](https://www.istockphoto.com/vector/3d-vector-conceptual-illustration-of-web-crawler-gm1336126311-417502066)
+
 ## The following tools were used to accomplish different crawling tasks
 - [Requests](https://docs.python-requests.org/en/latest/)
 - [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/)
