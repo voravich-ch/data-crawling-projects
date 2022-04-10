@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 
 import re
 import datetime
@@ -24,7 +25,13 @@ class grammyCrawler:
             print("Selenium Status: Started")
     
     def process_web(self, url):
-        self.driver.get(url)
+        while True:
+            try:
+                self.driver.get(url)
+                break
+            except TimeoutException:
+                self.driver.refresh()
+                print('Web not responding, refresh the page.')
         xpath = '//div[starts-with(@class, "bg-faint-gray-background border-t")]'
         buttons = self.driver.find_elements(by=By.XPATH, value=xpath)
         for button in buttons:
