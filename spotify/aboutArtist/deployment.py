@@ -30,6 +30,7 @@ def main():
         crawler.process_web(url)
         record = {
             "name": crawler.get_name(),
+            "rank": crawler.get_rank(),
             "followers" : crawler.get_followers(),
             "monthly_listeners": crawler.get_monthly_listeners(),
             "monthly_listeners_by_country": crawler.get_monthly_listeners_by_country(),
@@ -37,11 +38,11 @@ def main():
             "response_url": url,
             "crawl_date": datetime.datetime.now().strftime('%d/%m/%Y')
         }
-        # Store data in MongoDB
-        crawler.insert_data_to_mongo(data=record, db_name='grammyAwards', collection_name='spotify_about')
-        
         # Store data in local storage
         crawler.write_data_to_local(data=record, f_name='aboutArtist.jl')
+        
+        # Store data in MongoDB
+        crawler.insert_data_to_mongo(data=record, db_name='grammyAwards', collection_name='spotify_about')
         
     # Close Selenium session
     crawler.end_session()
