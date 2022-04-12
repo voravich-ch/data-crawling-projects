@@ -18,11 +18,11 @@ Image Copyright ©: [TarikVision](https://www.istockphoto.com/vector/3d-vector-c
 
 ## Python scripts with interesting functionalities
 ### OOP Crawling Workflow with Selenium
-- GrammyCrawl: [artistCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/artistCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/deployment.py)
+- GrammyCrawl: [artistCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/artistCrawl.py), [artistCrawl_deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/artistCrawl_deployment.py)
 - SpotifyCrawl: [aboutArtist.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/aboutArtist/aboutCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/aboutArtist/deployment.py)
 
 ### OOP Crawling Workflow with Spotipy
-- SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/spotifyCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/deployment.py), [acousticAttr.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/acousticAttr.py)
+- SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/spotifyCrawl.py), [spotifyCrawl_deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/spotifyCrawl_deployment.py), [acousticAttr.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/acousticAttr.py)
 
 ### Scrapy-Splash Infinite Scrolling (Lua Language)
 - IMDbCrawl: [imdb_user_review.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb/imdbCrawl/spiders/imdb_user_review.py)
