@@ -3,10 +3,12 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 
+import os
 import re
 import datetime
+import json
 import requests
 import bs4
 import time
@@ -21,17 +23,18 @@ class spotifyAboutCrawler:
         self.chrome_options.add_argument('--headless')
         prefs = {"profile.managed_default_content_settings.images": 2}
         self.chrome_options.add_experimental_option("prefs", prefs)
-
+    
     def start_session(self):
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), 
                                        options=self.chrome_options)
         self.driver.implicitly_wait(10)
         if self.driver:
-            self.item_count = 0
+            self.item_count_local = 0
+            self.item_count_mongo = 0
             self.start_time = datetime.datetime.now()
             print("Selenium Status: Started")
             print(f"Start Time: {self.start_time.strftime('%m/%d/%Y, %H:%M:%S')}")
-
+    
     def end_session(self):
         self.driver.quit()
         print("Selenium Status: Finished")
@@ -39,16 +42,17 @@ class spotifyAboutCrawler:
         print(f"Start Time: {self.start_time.strftime('%m/%d/%Y, %H:%M:%S')}")
         print(f"Finish Time: {self.finish_time.strftime('%m/%d/%Y, %H:%M:%S')}")
         print(f"Total Execution Time: {str(self.finish_time - self.start_time).split('.')[0]}")
-        print(f"Item Scraped Count: {self.item_count}")
-
+        print(f"Item Scraped Count (Local): {self.item_count_local}")
+        print(f"Item Scraped Count (MongoDB): {self.item_count_mongo}")
+    
     def insert_data_to_mongo(self, data, db_name, collection_name):
         # Connect to MongoDB
         client = pymongo.MongoClient()
-        collection = db[db_name][collection_name]
+        collection = client[db_name][collection_name]
         # Insert data
         collection.insert_one(data)
-        self.item_count += 1
-
+        self.item_count_mongo += 1
+    
     def write_data_to_local(self, data, f_name):
         if os.path.exists(f_name):
             # Remove the file if it was created before the crawler start time
@@ -56,7 +60,7 @@ class spotifyAboutCrawler:
                 os.remove(f_name)
         with open(f_name, 'a+') as f:
             f.write(json.dumps(data) + "\n")
-            self.item_count += 1
+            self.item_count_local += 1
             
     def process_web(self, url):
         self.driver.get(url)
@@ -68,41 +72,49 @@ class spotifyAboutCrawler:
     def get_name(self):
         xpath = '//h1'
         name = self.driver.find_element(by=By.XPATH, value=xpath)
-        if name:
-            return name.text.strip()
+        return name.text.strip()
     
     def get_rank(self):
         xpath = '//div[@class="ndIZG_atdpv_tBZtqQhk"]//div[@class="tQp8UOu8jGduQXUTcv0c"]'
-        rank = self.driver.find_element(by=By.XPATH, value=xpath)
-        if rank:
+        try:
+            rank = self.driver.find_element(by=By.XPATH, value=xpath)
             return rank.text.strip().replace('\n', ' ')
+        except NoSuchElementException:
+            return None
     
     def get_followers(self):
         xpath = '//div[text()="Followers"]/preceding-sibling::div'
-        followers = self.driver.find_element(by=By.XPATH, value=xpath)
-        if followers:
+        try:
+            followers = self.driver.find_element(by=By.XPATH, value=xpath)
             return followers.text.strip()
+        except NoSuchElementException:
+            return None
     
     def get_monthly_listeners(self):
         xpath = '//div[text()="Monthly Listeners"]/preceding-sibling::div'
-        monthly_listeners = self.driver.find_element(by=By.XPATH, value=xpath)
-        if monthly_listeners:
+        try:
+            monthly_listeners = self.driver.find_element(by=By.XPATH, value=xpath)
             return monthly_listeners.text.strip()
+        except NoSuchElementException:
+            return None
     
     def get_monthly_listeners_by_country(self):
         xpath = '//div[@class="Q_OUHp7iDNLBcO2ZYI2x"]'
-        elements = self.driver.find_elements(by=By.XPATH, value=xpath)
-        monthly_listeners_by_country = []
-        for element in elements:
-            country_xpath = 'div[@class="Type__TypeElement-goli3j-0 fWIEhj"]'
-            listeners_xpath = 'div[@class="Type__TypeElement-goli3j-0 ebHsEf"]'
-            country = element.find_element(by=By.XPATH, value=country_xpath)
-            listeners = element.find_element(by=By.XPATH, value=listeners_xpath)
-            monthly_listeners_by_country.append({
-                "country": country.text.strip(),
-                "listeners": re.search(r"[\d,]+", listeners.text.strip()).group(0)
-            })
-        return monthly_listeners_by_country
+        try:
+            elements = self.driver.find_elements(by=By.XPATH, value=xpath)
+            monthly_listeners_by_country = []
+            for element in elements:
+                country_xpath = 'div[@class="Type__TypeElement-goli3j-0 fWIEhj"]'
+                listeners_xpath = 'div[@class="Type__TypeElement-goli3j-0 ebHsEf"]'
+                country = element.find_element(by=By.XPATH, value=country_xpath)
+                listeners = element.find_element(by=By.XPATH, value=listeners_xpath)
+                monthly_listeners_by_country.append({
+                    "country": country.text.strip(),
+                    "listeners": re.search(r"[\d,]+", listeners.text.strip()).group(0)
+                })
+            return monthly_listeners_by_country
+        except NoSuchElementException:
+            return None
     
     def get_about(self):
         text_xpath = '//div[@class="Type__TypeElement-goli3j-0 gAmaez CjnwbSTpODW56Gerg7X6"]//p'
@@ -124,7 +136,7 @@ class spotifyAboutCrawler:
 
 def get_urls_from_grammy(db_name, collection_name):
     client = pymongo.MongoClient()
-    collection = db[db_name][collection_name]
+    collection = client[db_name][collection_name]
     cursor = collection.find({}, projection = {"_id": 0, "links": 1})
     df = pd.DataFrame(cursor)
     spotify_urls = list(filter(None, [links.get('Spotify') for links in df['links'] if links]))
