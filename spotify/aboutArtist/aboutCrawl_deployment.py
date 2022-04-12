@@ -11,7 +11,7 @@ Fields:
     - about: (dictionary (keys: "text", "hrefs")), About section with hrefs of those (i.e., other artists) mentioned in the text
 """
 
-from aboutCrawl import *
+from aboutCrawl import spotifyAboutCrawler, get_urls_from_grammy
 from tqdm import tqdm
 import datetime
 
