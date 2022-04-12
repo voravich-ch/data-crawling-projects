@@ -27,7 +27,8 @@ class grammyCrawler:
                                        options=self.chrome_options)
         self.driver.implicitly_wait(10)
         if self.driver:
-            self.item_count = 0
+            self.item_count_local = 0
+            self.item_count_mongo = 0
             self.start_time = datetime.datetime.now()
             print("Selenium Status: Started")
             print(f"Start Time: {self.start_time.strftime('%m/%d/%Y, %H:%M:%S')}")
@@ -39,7 +40,8 @@ class grammyCrawler:
         print(f"Start Time: {self.start_time.strftime('%m/%d/%Y, %H:%M:%S')}")
         print(f"Finish Time: {self.finish_time.strftime('%m/%d/%Y, %H:%M:%S')}")
         print(f"Total Execution Time: {str(self.finish_time - self.start_time).split('.')[0]}")
-        print(f"Item Scraped Count: {self.item_count}")
+        print(f"Item Scraped Count (Local): {self.item_count_local}")
+        print(f"Item Scraped Count (MongoDB): {self.item_count_mongo}")
 
     def insert_data_to_mongo(self, data, db_name, collection_name):
         # Connect to MongoDB
@@ -47,7 +49,7 @@ class grammyCrawler:
         collection = db[db_name][collection_name]
         # Insert data
         collection.insert_one(data)
-        self.item_count += 1
+        self.item_count_mongo += 1
 
     def write_data_to_local(self, data, f_name):
         if os.path.exists(f_name):
@@ -56,7 +58,7 @@ class grammyCrawler:
                 os.remove(f_name)
         with open(f_name, 'a+') as f:
             f.write(json.dumps(data) + "\n")
-            self.item_count += 1
+            self.item_count_local += 1
 
     def process_web(self, url):
         self.driver.get(url)
