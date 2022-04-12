@@ -30,11 +30,11 @@ def main():
             "response_url": url,
             "crawl_date": datetime.datetime.now().strftime('%d/%m/%Y')
         }
-        # Store data in MongoDB
-        # crawler.insert_data_to_mongo(data=record, db_name='grammyAwards', collection_name='artist_test')
-        
         # Store data in local storage
         crawler.write_data_to_local(data=record, f_name='grammyArtist.jl')
+        
+        # Store data in MongoDB
+        crawler.insert_data_to_mongo(data=record, db_name='grammyAwards', collection_name='artists')
     
     # Close Selenium session
     crawler.end_session()
