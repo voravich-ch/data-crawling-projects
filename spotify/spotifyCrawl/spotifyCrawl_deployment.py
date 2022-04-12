@@ -9,7 +9,7 @@ This script utilises Spotify Artist ID to crawl the following data from Spotify:
     - Acoustic Attributes (Audio Features)
 """
 
-from spotifyCrawl import *
+from spotifyCrawl import spotifyCrawler, connect_to_db, insert_data_to_mongo, batch
 from dotenv import load_dotenv
 from tqdm import tqdm
 
