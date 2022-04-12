@@ -3,10 +3,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
 
+import os
 import re
 import datetime
+import json
 import requests
 import bs4
 import time
@@ -15,27 +16,54 @@ import pymongo
 class grammyCrawler:
     
     def __init__(self):
-        chrome_options = Options()
-        chrome_options.add_argument("start-maximized")
-        chrome_options.add_argument('--headless')
+        self.chrome_options = Options()
+        self.chrome_options.add_argument("start-maximized")
+        self.chrome_options.add_argument('--headless')
         prefs = {"profile.managed_default_content_settings.images": 2}
-        chrome_options.add_experimental_option("prefs", prefs)
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        self.chrome_options.add_experimental_option("prefs", prefs)
+
+    def start_session(self):
+        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), 
+                                       options=self.chrome_options)
+        self.driver.implicitly_wait(10)
         if self.driver:
+            self.item_count = 0
+            self.start_time = datetime.datetime.now()
             print("Selenium Status: Started")
-    
+            print(f"Start Time: {self.start_time.strftime('%m/%d/%Y, %H:%M:%S')}")
+
+    def end_session(self):
+        self.driver.quit()
+        print("Selenium Status: Finished")
+        self.finish_time = datetime.datetime.now()
+        print(f"Start Time: {self.start_time.strftime('%m/%d/%Y, %H:%M:%S')}")
+        print(f"Finish Time: {self.finish_time.strftime('%m/%d/%Y, %H:%M:%S')}")
+        print(f"Total Execution Time: {str(self.finish_time - self.start_time).split('.')[0]}")
+        print(f"Item Scraped Count: {self.item_count}")
+
+    def insert_data_to_mongo(self, data, db_name, collection_name):
+        # Connect to MongoDB
+        client = pymongo.MongoClient()
+        collection = db[db_name][collection_name]
+        # Insert data
+        collection.insert_one(data)
+        self.item_count += 1
+
+    def write_data_to_local(self, data, f_name):
+        if os.path.exists(f_name):
+            # Remove the file if it was created before the crawler start time
+            if datetime.datetime.fromtimestamp(os.path.getctime(f_name)) < self.start_time:
+                os.remove(f_name)
+        with open(f_name, 'a+') as f:
+            f.write(json.dumps(data) + "\n")
+            self.item_count += 1
+
     def process_web(self, url):
-        while True:
-            try:
-                self.driver.get(url)
-                break
-            except TimeoutException:
-                self.driver.refresh()
-                print('Web not responding, refresh the page.')
+        self.driver.get(url)
         xpath = '//div[starts-with(@class, "bg-faint-gray-background border-t")]'
         buttons = self.driver.find_elements(by=By.XPATH, value=xpath)
         for button in buttons:
-            button.click()
+            self.driver.execute_script("arguments[0].click();", button)
             time.sleep(0.5)
     
     def get_name(self):
@@ -107,12 +135,3 @@ def parse_start_urls():
     find_artist = re.compile(r'https://www.grammy.com/artists/.+/\d+')
     artist_urls = [url.get_text() for url in html.find_all('loc') if find_artist.match(url.get_text())]
     return artist_urls
-
-def connect_to_db(db_name, collection_name):
-    client = pymongo.MongoClient()
-    db = client[db_name]
-    collection = db[collection_name]
-    return collection
-
-def insert_data_to_mongo(data, collection):
-    collection.insert_one(data)
