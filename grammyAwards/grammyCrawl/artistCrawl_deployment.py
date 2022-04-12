@@ -5,7 +5,7 @@
 This script crawls artist data from Grammy.com and store in grammyAwards database (MongoDB)
 """
 
-from artistCrawl import *
+from artistCrawl import grammyCrawler, parse_start_urls
 from tqdm import tqdm
 import datetime
 
