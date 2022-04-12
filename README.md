@@ -24,7 +24,7 @@ Image Copyright ©: [TarikVision](https://www.istockphoto.com/vector/3d-vector-c
 ### OOP Crawling Workflow with Spotipy
 - SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/spotifyCrawl.py), [deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/deployment.py), [acousticAttr.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/acousticAttr.py)
 
-### Scrapy-Splash Infinite Scroll (Lua Language)
+### Scrapy-Splash Infinite Scrolling (Lua Language)
 - IMDbCrawl: [imdb_user_review.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb/imdbCrawl/spiders/imdb_user_review.py)
 
 ### Vertical Crawling with Scrapy
