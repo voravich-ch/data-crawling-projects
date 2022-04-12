@@ -1,7 +1,7 @@
 # Data Crawling Projects
 This repository showcases data crawling projects for previous research.
 
-<img src="https://drive.google.com/uc?export=view&id=1NonX4DAigi5OHJaXe16b3LL3Fp4WM7dX" width="70%">
+![This Image Has COPYRIGHT!](./images/this_image_has_copyright.jpg)
 
 Image Copyright ©: [TarikVision](https://www.istockphoto.com/vector/3d-vector-conceptual-illustration-of-web-crawler-gm1336126311-417502066)
 
