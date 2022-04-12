@@ -13,13 +13,13 @@ def main():
     # Initialise grammyCrawler
     crawler = grammyCrawler()
     
-    # Connect to database
-    collection = connect_to_db(db_name='grammyAwards2', collection_name='artists')
+    # Start Selenium session
+    crawler.start_session()
     
     # Parse start urls from sitemap
     artist_urls = parse_start_urls()
-    artist_urls = artist_urls[299+2553:]
     
+    # Start crawling
     for url in tqdm(artist_urls):
         crawler.process_web(url)
         record = {
@@ -30,7 +30,14 @@ def main():
             "response_url": url,
             "crawl_date": datetime.datetime.now().strftime('%d/%m/%Y')
         }
-        insert_data_to_mongo(data=record, collection=collection)
+        # Store data in MongoDB
+        # crawler.insert_data_to_mongo(data=record, db_name='grammyAwards', collection_name='artist_test')
+        
+        # Store data in local storage
+        crawler.write_data_to_local(data=record, f_name='grammyArtist.jl')
+    
+    # Close Selenium session
+    crawler.end_session()
 
 if __name__ == "__main__":
     main()
