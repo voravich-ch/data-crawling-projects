@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# -*- encoding utf-8 -*-
+
+"""
+This script utilises Spotify Artist ID to crawl the 'About' section on Spotify artist page:
+
+Fields:
+    - followers: (str), Number of followers
+    - monthly_listeners: (str), Number of monthly listeners
+    - monthly_listeners_by_country: (list of dictionary (keys: "country", "listeners")), Number of monthly listeners by country
+    - about: (dictionary (keys: "text", "hrefs")), About section with hrefs of those (i.e., other artists) mentioned in the text
+"""
+
+from aboutCrawl import *
+from tqdm import tqdm
+import datetime
+
+def main():
+    # Initialise spotifyAboutCrawler
+    crawler = spotifyAboutCrawler()
+    
+    # Start Selenium session
+    crawler.start_session()
+    
+    # Get spotify urls from grammyAwards database
+    spotify_urls = get_urls_from_grammy(db_name='grammyAwards', collection_name='artists_googleSearch')
+    
+    # Start crawling
+    for url in tqdm(spotify_urls):
+        crawler.process_web(url)
+        record = {
+            "name": crawler.get_name(),
+            "followers" : crawler.get_followers(),
+            "monthly_listeners": crawler.get_monthly_listeners(),
+            "monthly_listeners_by_country": crawler.get_monthly_listeners_by_country(),
+            "about": crawler.get_about(),
+            "response_url": url,
+            "crawl_date": datetime.datetime.now().strftime('%d/%m/%Y')
+        }
+        # Store data in MongoDB
+        crawler.insert_data_to_mongo(data=record, db_name='grammyAwards', collection_name='spotify_about')
+        
+        # Store data in local storage
+        crawler.write_data_to_local(data=record, f_name='aboutArtist.jl')
+        
+    # Close Selenium session
+    crawler.end_session()
+
+if __name__ == '__main__':
+    main()
