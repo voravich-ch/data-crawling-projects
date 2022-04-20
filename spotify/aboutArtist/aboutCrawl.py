@@ -28,6 +28,7 @@ class spotifyAboutCrawler:
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), 
                                        options=self.chrome_options)
         if self.driver:
+            self.driver.implicitly_wait(10)
             self.item_count_local = 0
             self.item_count_mongo = 0
             self.start_time = datetime.datetime.now()
@@ -63,7 +64,6 @@ class spotifyAboutCrawler:
             
     def process_web(self, url):
         self.driver.get(url)
-        self.driver.implicitly_wait(10)
         xpath = '//button[starts-with(@class, "uhDzVbFHy")]'
         button = self.driver.find_element(by=By.XPATH, value=xpath)
         self.driver.execute_script("arguments[0].click();", button)
