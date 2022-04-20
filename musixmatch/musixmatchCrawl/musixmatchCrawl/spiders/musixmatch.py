@@ -7,10 +7,10 @@ def populate_url():
     # Specify the base url
     base_url = 'https://www.musixmatch.com/track'
     # Specify min-max track ids
-    # ranger = [555813, 18512629]
+    # range = [555,813, 233,106,400 ]
     min_track = 555813
-    # max_track = 18512629
-    max_track= 555815
+    # max_track = 233,106,400 
+    max_track= 240000000
     # Create a range of track ids
     tracks = range(min_track, max_track + 1)
     # Populate urls
