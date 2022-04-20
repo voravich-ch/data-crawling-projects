@@ -26,6 +26,7 @@ class grammyCrawler:
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), 
                                        options=self.chrome_options)
         if self.driver:
+            self.driver.implicitly_wait(10)
             self.item_count_local = 0
             self.item_count_mongo = 0
             self.start_time = datetime.datetime.now()
@@ -61,7 +62,6 @@ class grammyCrawler:
 
     def process_web(self, url):
         self.driver.get(url)
-        self.driver.implicitly_wait(10)
         xpath = '//div[starts-with(@class, "bg-faint-gray-background border-t")]'
         buttons = self.driver.find_elements(by=By.XPATH, value=xpath)
         for button in buttons:
