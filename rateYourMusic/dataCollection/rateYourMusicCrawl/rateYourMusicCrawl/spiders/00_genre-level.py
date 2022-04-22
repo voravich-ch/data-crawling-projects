@@ -24,7 +24,7 @@ class genreLevelSpider(CrawlSpider):
     # Rules for vertical crawling
     rules = (
         Rule(LinkExtractor(restrict_xpaths='//h2/a'), 
-             callback='parse_item', follow=True),
+             callback='parse_item', follow=False),
     )
     
     def parse_item(self, response):
