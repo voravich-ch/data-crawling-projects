@@ -24,8 +24,6 @@ urls, spd_name = populate_url()
 # Setting up XPath
 # Variables XPath
 var_xpath = '/html/body/script[1]/text()'
-# Lyric XPath
-lyric_xpath = '//span[@class="lyrics__content__ok"]'
 
 class musixmatchSpider(scrapy.Spider):
     name = spd_name
