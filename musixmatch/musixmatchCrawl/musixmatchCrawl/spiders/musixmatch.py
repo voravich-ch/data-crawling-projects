@@ -22,7 +22,6 @@ def populate_url():
 urls, spd_name = populate_url()
 
 # Setting up XPath
-# Variables XPath
 var_xpath = '/html/body/script[1]/text()'
 
 class musixmatchSpider(scrapy.Spider):
