@@ -26,7 +26,6 @@ def variables_to_json(item):
 class musixmatchItem(scrapy.Item):
     # Primary fields
     variables = scrapy.Field(input_processor=MapCompose(variables_to_json), output_processor=TakeFirst())
-    lyric = scrapy.Field(input_processor=MapCompose(remove_tags), output_processor=Join())
     
     # Housekeeping fields
     request_url = scrapy.Field(output_processor=TakeFirst())
