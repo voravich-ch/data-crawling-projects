@@ -38,7 +38,6 @@ class musixmatchSpider(scrapy.Spider):
         
         # Primary fields
         l.add_xpath('variables', var_xpath)
-        l.add_xpath('lyric', lyric_xpath)
         
         # Housekeeping fields
         l.add_value('request_url', response.request.meta['redirect_urls'])
