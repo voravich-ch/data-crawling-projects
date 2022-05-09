@@ -18,7 +18,7 @@ def load_and_insert_data(f_name, collection):
     return None
 
 def main():
-    collection = connect_to_city(db_name='musixmatch', collection_name='test')
+    collection = connect_to_city(db_name='musixmatch', collection_name='data')
     load_and_insert_data(f_name='musixmatch.jl', collection=collection)
     
 if __name__ == "__main__":
