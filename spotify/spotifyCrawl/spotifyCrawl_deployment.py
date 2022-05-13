@@ -43,7 +43,7 @@ def main():
     collection = connect_to_db(db_name='spotify', collection_name='test_track')
     track_ids = [i['id'] for i in collection.find({}, projection = {"_id": 0, "id": 1})]
     for chunk in tqdm(batch(track_ids, 100)):
-        document = crawler.request_acoustic_attributes(track_ids)
+        document = crawler.request_acoustic_attributes(chunk)
         insert_data_to_mongo(data=document, collection=connect_to_db(db_name='spotify', collection_name='acousticAttributes'))
     
 if __name__ == "__main__":
