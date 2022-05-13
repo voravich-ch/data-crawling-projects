@@ -27,11 +27,17 @@ Image Copyright ©: [TarikVision](https://www.istockphoto.com/vector/3d-vector-c
 ### Scrapy-Splash Infinite Scrolling (Lua Language)
 - IMDbCrawl: [imdb_user_review.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb/imdbCrawl/spiders/imdb_user_review.py)
 
+### Scrapy Login with Customised Horizontal/Vertical Crawling
+- BeerAdvocateCrawl: [beerReview.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/beerAdvocateCrawl/beerAdvocateCrawl/spiders/beerReview.py)
+
 ### Vertical Crawling with Scrapy
 - RateYourMusicCrawl: [00_genre-level.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/rateYourMusic/dataCollection/rateYourMusicCrawl/rateYourMusicCrawl/spiders/00_genre-level.py)
 
 ### Horizontal Crawling with Scrapy
 - MetacriticCrawl: [mt_movie_url.py](https://github.com/voravich-ch/data-crawling-projects/blob/3eb73b1cdc172be2767dee1e51b824b3afa3be62/metacritic/metacriticCrawl/spiders/mt_movie_url.py)
+
+### Vertical/Horizontal Crawling with Scrapy
+- BeerAdvocateCrawl: [forum.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/beerAdvocateCrawl/beerAdvocateCrawl/spiders/forum.py)
 
 ### Scrape Data from GoogleSearch
 - GoogleSearch: [artistSearchFromMusicBrainz.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/dataCollection/spotifyCrawl/googleSearch/artistSearchFromMusicBrainz.py), [grammyGoogleSearch.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyGoogleSearch/grammyGoogleSearch.py)
