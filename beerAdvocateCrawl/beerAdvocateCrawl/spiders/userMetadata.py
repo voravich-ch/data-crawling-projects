@@ -48,8 +48,7 @@ class UserMetadataSpider(scrapy.Spider):
         return FormRequest.from_response(response,
                                          formdata={"login": os.environ.get('user'),
                                                    "password": os.environ.get('password')},
-                                         callback=self.redirect
-        )
+                                         callback=self.redirect)
     
     # Redirect to the page after login
     def redirect(self, response):
