@@ -18,7 +18,7 @@ class grammyCrawler:
     def __init__(self):
         self.chrome_options = Options()
         self.chrome_options.add_argument("start-maximized")
-        self.chrome_options.add_argument('--headless')
+        self.chrome_options.add_argument("--headless")
         prefs = {"profile.managed_default_content_settings.images": 2}
         self.chrome_options.add_experimental_option("prefs", prefs)
 
