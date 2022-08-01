@@ -36,12 +36,12 @@ As of 2022, we have collected:
                         </li>
                         <li> 1.2. For artists without Spotify IDs, we find their IDs by searching their names on GoogleSearch (See:
                                 <a href="https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/googleSearch/artistSearchFromMusicBrainz.py">GoogleSearch (MusicBrainz)</a>;
-                                <a href="https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/accumulateSpotifyID.py.py#L36">Extract Spotify artists IDs</a>) 
+                                <a href="https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/accumulateSpotifyID.py#L36">Extract Spotify artists IDs</a>) 
                         </li>
                         <li> 1.3. Get Spotify artists IDs by searching the name of Grammy winners and nominees on GoogleSearch (See:
                                 <a href="https://github.com/voravich-ch/data-crawling-projects/tree/master/grammyAwards/grammyCrawl">Grammy Crawler</a>;
                                 <a href="https://github.com/voravich-ch/data-crawling-projects/tree/master/grammyAwards/grammyGoogleSearch">GoogleSearch (Grammy)</a>;
-                                <a href="https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/accumulateSpotifyID.py.py#L54">Extract Spotify artists IDs</a>)
+                                <a href="https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/accumulateSpotifyID.py#L54">Extract Spotify artists IDs</a>)
                         </li>
                         <li> 1.4. Get Spotify artists IDs from related artists section in the SpotifyAbout page of Grammy winners and nominees (See:
                                 <a href="https://github.com/voravich-ch/data-crawling-projects/tree/master/spotify/aboutArtist">Spotify AboutPage Crawler</a>;
