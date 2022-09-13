@@ -44,7 +44,7 @@ Overall, there are data of 870,602 songs stored in `whoSampled.whoSampled` colle
 
 Fields | Type | Description 
 --- | --- | ---
-song_name | STRING | Song's name
+song_name | STRING | Song name
 artists | LIST-OF-DICTIONARY | Artist names and corresponding links
 artists_raw_text | STRING | Artist names accounted for whether main artist or featuring
 album_name | DICTIONARY | Album name and corresponding link
