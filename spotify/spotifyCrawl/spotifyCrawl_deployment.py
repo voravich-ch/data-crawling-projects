@@ -24,7 +24,7 @@ def main():
     
     # Artist-level data
     collection = connect_to_db(db_name='spotify', collection_name='artist_id')
-    artist_ids = [i['artist_id'] for i in collection.find({}, projection = {"_id": 0, "artist_id": 1})]
+    artist_ids = [i['artist_id'] for i in collection.find({}, projection = {"_id": 0, "artist_id": 1}).skip(0).limit(0)]
     for chunk in tqdm(batch(artist_ids, 50)):
         document = crawler.request_artists_meta(chunk)
         insert_data_to_mongo(data=document, collection=connect_to_db(db_name='spotify', collection_name='artists'))
@@ -40,7 +40,7 @@ def main():
     
     # Track-level data
     collection = connect_to_db(db_name='spotify', collection_name='test_album')
-    album_ids = [i['id'] for i in collection.find({}, projection = {"_id": 0, "id": 1})]
+    album_ids = [i['id'] for i in collection.find({}, projection = {"_id": 0, "id": 1}).skip(0).limit(0)]
     for album_id in tqdm(album_ids):
         document = crawler.request_tracks_from_album(album_id)
         insert_data_to_mongo(data=document, collection=connect_to_db(db_name='spotify', collection_name='tracks'))
@@ -49,7 +49,7 @@ def main():
     
     # Acoustic attributes
     collection = connect_to_db(db_name='spotify', collection_name='test_track')
-    track_ids = [i['id'] for i in collection.find({}, projection = {"_id": 0, "id": 1})]
+    track_ids = [i['id'] for i in collection.find({}, projection = {"_id": 0, "id": 1}).skip(0).limit(0)]
     for chunk in tqdm(batch(track_ids, 100)):
         document = crawler.request_acoustic_attributes(chunk)
         # Filter None
