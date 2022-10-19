@@ -49,8 +49,14 @@ def main():
     
     # Acoustic attributes
     collection = connect_to_db(db_name='spotify', collection_name='test_track')
-    track_ids = [i['id'] for i in collection.find({}, projection = {"_id": 0, "id": 1}).skip(0).limit(0)]
-    for chunk in tqdm(batch(track_ids, 100)):
+    # Specify total number of iterations – to skip
+    _iter = 0
+    # Log iter passed – plus `number of iter performed` 
+    passed = 0
+    # Specify batch size
+    batch_size = 100
+    track_ids = [i['id'] for i in collection.find({}, projection = {"_id": 0, "id": 1}).skip(_iter*batch_size).limit(0 - passed*batch_size)]
+    for chunk in tqdm(batch(track_ids, batch_size)):
         document = crawler.request_acoustic_attributes(chunk)
         # Filter None
         document = list(filter(lambda item: item is not None, document))
