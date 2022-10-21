@@ -29,7 +29,7 @@ As of 2022, we have collected:
 
 ## Framework
 <ul>
-        <h4> 1. Collect Spotify artist IDs from multiple sources</h4>
+        <h4> 1. Collect Spotify artist IDs from multiple sources; Aggregate data using <a href="https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/accumulateSpotifyID.py">accumulateSpotifyID.py</a></h4>
                 <ul>
                         <li> 1.1. Get Spotify artists IDs from Musicbrainz database (See: 
                                 <a href="https://musicbrainz.org/doc/MusicBrainz_Database">MusicBrainz Database</a>; 
