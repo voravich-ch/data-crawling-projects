@@ -20,8 +20,9 @@ Image Copyright ©: [TarikVision](https://www.istockphoto.com/vector/3d-vector-c
 ### OOP Crawling Workflow with Selenium
 - GrammyCrawl: [artistCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/artistCrawl.py), [artistCrawl_deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/grammyAwards/grammyCrawl/artistCrawl_deployment.py)
 - SpotifyCrawl: [aboutCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/aboutArtist/aboutCrawl.py), [aboutCrawl_deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/aboutArtist/aboutCrawl_deployment.py)
+- ImdbProfessionalCrawl: [imdb_role_crawler.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb_professional/imdb_professional/selenium_crawler/imdb_role_crawler.py), [imdb_role_deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb_professional/imdb_professional/selenium_crawler/imdb_role_deployment.py)
 
-### OOP Crawling Workflow with Spotipy
+### OOP Crawling Workflow with Spotipy API
 - SpotifyCrawl: [spotifyCrawl.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/spotifyCrawl.py), [spotifyCrawl_deployment.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/spotifyCrawl/spotifyCrawl_deployment.py), [acousticAttr.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/spotify/acousticAttr.py)
 
 ### Scrapy-Splash Infinite Scrolling (Lua Language)
@@ -29,6 +30,9 @@ Image Copyright ©: [TarikVision](https://www.istockphoto.com/vector/3d-vector-c
 
 ### Scrapy Login with Customised Horizontal/Vertical Crawling
 - BeerAdvocateCrawl: [beerReview.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/beerAdvocateCrawl/beerAdvocateCrawl/spiders/beerReview.py)
+
+### Scrapy on Complex Pattern Site
+- IMDbProfessionalCrawl: [imdb_award.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/imdb_professional/imdb_professional/spiders/imdb_award.py)
 
 ### Vertical Crawling with Scrapy
 - RateYourMusicCrawl: [00_genre-level.py](https://github.com/voravich-ch/data-crawling-projects/blob/master/rateYourMusic/dataCollection/rateYourMusicCrawl/rateYourMusicCrawl/spiders/00_genre-level.py)
