@@ -1,7 +1,7 @@
 # Scrape urls from whoSampled sitemap
 # To scrape data from whoSampled, a proxy is needed (Tor and Cloud VM do not work)
 # Scraperapi provides free service for 5000 requests per month – 100k for $49; 1M for $149
-# Sample request url: "http://api.scraperapi.com?api_key=[REDACTED_API_KEY]&url=https://www.whosampled.com/Kanye-West/"
+# Sample request url: "http://api.scraperapi.com?api_key={your_api_key}&url=https://www.whosampled.com/Kanye-West/"
 
 import os
 import re
